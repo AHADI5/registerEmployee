@@ -1,0 +1,446 @@
+/* Font | Google Popins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,600;1,700&display=swap');
+
+
+
+:root {
+    /* colors */
+    --body-color:#E4E9F7;
+    --side-bar-color:#FFF;
+    --primary-color:rgb(68, 137, 217);
+    --primary-color-light:#F6F5FF;
+    --primary-color-light2:#8d84d9;
+    --text-color:#707070;
+    --boxshadow:rgba(31, 32, 34, 0.3) 0px 1px 2px 0px ,
+    rgba(48, 49, 50, 0.15) 0px 1px 13px 1px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+li {
+    list-style-type: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color-light);
+}
+
+.grid{
+    /* grid */
+    display: grid;
+}
+
+.flex {
+    /* flex */
+    display: flex;
+}
+
+.block {
+    /* block */
+    display: block;
+}
+
+.login {
+    justify-content: center;
+    margin-top: 150px;
+}
+
+input {
+    margin-top: 15px;
+    width: 320px;
+    padding: 6px;
+}
+
+.connection-button button {
+    width: 320px;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 
+Menu handling
+
+*/
+
+.logo i {
+    font-size: 20px;
+}
+
+.sidebar {
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    background-color: var(--primary-color);
+    height: 96vh;
+    border-radius: 5px;
+    position: fixed;
+}
+
+a {
+    color: white;
+}
+.sidebar .menus {
+
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 170px;
+
+}
+hr {
+    color: white;
+}
+
+.sidebar ul li {
+    margin-top: 23px;
+}
+
+.logo-container {
+    padding-bottom: 10px;
+}
+
+.logo {
+
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.society-name {
+    color: white;
+    font-weight: 900;
+}
+.active-menu {
+    background-color: var(--side-bar-color);
+    color: var(--primary-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* 
+content 
+*/
+.container {
+    grid-template-columns: 180px auto;
+   
+}
+
+.title-bar {
+    align-items: center;
+    align-content: center;
+   justify-content: space-around; 
+    background-color: white;
+    width: 98%;
+    margin-top: 13px;
+    padding: 12px;
+}
+
+.search-bar{
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    padding: 3px;
+}
+.search-box {
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+   
+}
+
+.admin-info{
+    justify-content: center;
+}
+
+.search-bar input {
+    margin-top: 2px;
+    padding: 3px;
+}
+
+.number-emplo {
+    font-size: 80px;
+    background-color: var(--primary-color);
+    padding: 50px;
+    border-radius: 100%;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+
+.employees {
+    grid-template-columns: 60% 40%;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.employees-number {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 100px;
+}
+
+.service {
+   
+    padding: 5px;
+    gap: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.holly-days {
+    gap: 250px;
+}
+
+.liste-content{
+   
+    width: 98%;
+}
+
+.liste {
+    width: 100%;
+}
+
+
+
+thead th {
+    background-color: var(--body-color);
+    color: var(--primary-color);
+}
+th {
+    font-weight: bold;
+}
+thead {
+    position: page;
+}
+
+/* 
+.champs:nth-child(even) {
+    background-color: var(--body-color);
+    color: #6d6b6b;
+}
+
+.champs:nth-child(odd) {
+
+    background-color: #fff;
+}
+
+tr {
+    width: 95%
+} */
+.champs {
+   
+    display: grid;
+    grid-template-columns: 30% 30% 30% 30% 30% 30%;
+    text-align: center;
+    width: 55%;
+    padding: 8px;
+   
+}
+
+.add-new button {
+
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px;
+    width: 100px;
+}
+.title-page {
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.ouvrier-liste {
+    margin-top: 10px;
+    
+}
+.actions {
+    margin-right: 12px;
+    gap: 10px;
+}
+
+/*  */
+form{
+    margin-left: 10px;
+}
+
+.informations-perso select ,.informations-perso input {
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--text-color);
+   
+}
+
+select {
+    background-color: white;
+    outline: none;
+    border: none;
+    border: 1px solid var(--text-color);
+}
+
+.job-informations select ,.job-informations input{
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--text-color);
+   
+}
+
+textarea{
+    margin-top: 10px;
+    width: 400px;
+}
+.ouvrierForm {
+    gap: 100px;
+
+}
+.informations{
+    gap: 100px;
+}
+.add-form {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.action {
+    margin-top: 10px;
+    justify-content: center;
+
+}
+.action button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    width: 500px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-title {
+    border-left: 15px solid var(--primary-color);
+    background-color: white;
+    padding:12px;
+}
+
+.actions-agents{
+    grid-template-columns: 20% 20% 20%;
+    gap: 8px;
+}
+
+.actions-agents  {
+    margin-left: 70px;
+}
+img {
+    width: 100%;
+}
+
+.id {
+    visibility: hidden;
+}
+
+.info {
+    padding: 10px;
+}
+
+.informations-agents {
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 50px;
+}
+
+.title-section{
+    background-color: var(--side-bar-color);
+    padding: 12px;
+    border-left: 12px solid var(--primary-color);
+
+}
+
+.icon img  {
+    width: 100%;
+  
+}
+
+.icon {
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.illustrations {
+    width: 200px;
+}
+
+.illustrations img {
+    width: 100%;
+
+}
+
+.icon-illustration img {
+    width: 100%;
+}
+
+.icon-illustration {
+    width: 25px;
+}
+
+.number-image {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.name {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.icon-illustration{
+    padding: 2px;
+    margin: 5px;
+}
