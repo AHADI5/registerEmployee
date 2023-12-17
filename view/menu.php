@@ -34,7 +34,7 @@
         <div class="secondary-menus">
             <ul>
                 
-                <a href="../../controllers/section/logOut.php">
+                <a href="../logic/logout.php">
                     <li>
                         <span class="icon-menu"><i class="bi bi-box-arrow-right"></i></span>
                         <span class="text">Logout</span>

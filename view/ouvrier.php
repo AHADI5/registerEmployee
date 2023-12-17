@@ -35,6 +35,8 @@
                             <th>Adresse</th>
                             <th>Domaine</th>
                             <th>Action</th>
+
+                        
                         </tr>
                     </thead>
  
@@ -63,7 +65,7 @@
                                         <td class = "action-cell flex">
                                             <div class="actions-agents grid">
                                                  <a href="../logic/deleteOuvrier.php?id=$id_ouvriers"><div class="delete flex"><img src="../img/icons8-supprimer.svg" alt=""></div></a>
-                                                 <a href="./modifierOuvrier.php?id= $id_ouvriers&nom=$nom&posnom=$posnom&prenom=$prenom&adresse= $adresse &type_agent=$type_agent&domainr=$domainr&description=$desrciption &niveau=$niveau &specialite=$specialite">
+                                                 <a href="./modifierOuvrier.php?id= $id_ouvriers&nom=$nom&posnom=$posnom&prenom=$prenom&adresse= $adresse &type_agent=$type_agent&domainr=$domainr&description=$desrciption &niveau=$niveau &specialite=$specialite">   <div class="modifier">   <img src="../img/icons8-boîte-modifier-32.png" alt=""></div></a>
                                                  <a href="./ouvrierInfo.php?id=$id_ouvriers"><div class="informations flex"> <img src="../img/icons8-info-48.png" alt=""></div></a>  
                                             </div>
                                         </td>

@@ -10,7 +10,7 @@
     <div class="login flex">
         
         <div class="login-section">
-            <form action="" method="post">
+            <form action="../logic/loginHandlle.php" method="post">
                 <h2>Login</h2>
                 <div class="username">
                     <input type="text" name="username" placeholder="username" id = "username" >

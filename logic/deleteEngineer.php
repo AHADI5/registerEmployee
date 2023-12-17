@@ -4,7 +4,7 @@ $id = $_GET ["id"] ;
 
 $requette = 'DELETE  FROM ingenieurs WHERE id_ouvriers = :id';
 $statement = $connection ->prepare($requette);
-$execution = $statement -> execute(array('id_ouvriers'=> $id));
+$execution = $statement -> execute(array(':id'=> $id));
 if ($execution) {
     header('Location:../view/ingenieur.php');
 }

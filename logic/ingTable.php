@@ -1,13 +1,17 @@
 <?php 
 include("../config/config.php");
+
 function ouvrier($connection) {
     $requette = 'SELECT * FROM ingenieurs';
     $statement = $connection ->prepare($requette);
     $execution = $statement -> execute();
-
+    $information = [];
     if ($execution) {
-        $data = $execution -> fetch(PDO::FETCH_ASSOC);
-        return $data;
+       while ( $data = $statement -> fetch()) {
+       $information[] = $data;
+        
+ }
+        return $information;
     } else { return [];}
 }
 
