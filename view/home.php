@@ -70,7 +70,7 @@ function genieCivil($connection){
             $row = $statement->fetch(PDO::FETCH_ASSOC);
             $ouvrierNumber = $row['ouvriersNumber'];
             $ingenieursNumber = $row['ingenieursNumber'];
-            $result = [$ouvrierNumber ,$ingenieursNumber];
+            $result = [$ouvrierNumber,$ingenieursNumber];
             return $result;
             
         }

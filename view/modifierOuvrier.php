@@ -60,7 +60,7 @@ $id = $_GET['id'];
                                                 <option value="Informatique">Informatique</option>
                                                 <option value="Mecanique">Mecanique</option>
                                                 <option value="Batiment">Batiment</option>
-                                                <option value="Electicite">Electicite</option>
+                                                <option value="Electicite">Electricite</option>
                                             </select>
                                         </div>
                                         <div class="postnom">
